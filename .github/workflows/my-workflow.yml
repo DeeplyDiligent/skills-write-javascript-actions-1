@@ -14,8 +14,6 @@ jobs:
       - name: ha-ha
         uses: ./.github/actions/joke-action
         id: ha-ha
-        outputs:
-          joke-output: ${{ steps.ha-ha.outputs.joke-output }}
       - name: Get the output
         run: echo ${{ steps.ha-ha.outputs.joke-output }}
       - name: Comment on issue

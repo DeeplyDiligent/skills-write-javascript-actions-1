@@ -17,7 +17,7 @@ jobs:
       - name: Get the output
         run: echo ${{ steps.ha-ha.outputs.joke-output }}
       - name: Comment on issue
-        uses: actions/github-script@v5
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
